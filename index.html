@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
+<<<<<<< HEAD
+  <link rel="icon" type="image/png" href="flavicon.png">
+=======
+  <link rel="icon" type="image/png" href="favicon.png">
+>>>>>>> f74ac31 (Initial commit)
+  <title>Clocked In</title>
+</head>
+<body>
+
+  <div id="pulse-overlay"></div>
+
+  <div class="themes-dropdown">
+    <button class="themes-button">Themes</button>
+    <div class="theme-options">
+      <div class="ocean theme">Ocean</div>
+      <div class="forest theme">Forest</div>
+      <div class="desert theme">Desert</div>
+      <div class="sunset theme">Sunset</div>
+      <div class="arctic theme">Arctic</div>
+      <div class="midnight theme">Midnight</div>
+    </div>
+  </div>
+
+  <div class="header-container">
+    <h1 class="header">Clocked In</h1>
+    <i class="ph ph-timer"></i>
+  </div>
+
+  <p class="subtitle">Your Minimalist Stopwatch</p>
+
+  <div class="time-container">
+    <p class="time">00:00:00</p>
+  </div>
+
+  <div class="progress-bar-container">
+    <div class="progress-bar-fill"></div>
+  </div>
+
+  <div class="button-container">
+    <button class="start-button">Start</button>
+    <button class="stop-button">Stop</button>
+    <button class="reset-button">Reset</button>
+  </div>
+
+  <div class="custom-time-input">
+    <input type="number" id="hours" placeholder="Hours" min="0">
+    <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
+    <input type="number" id="seconds" placeholder="Seconds" min="0" max="59">
+    <button class="set-time-button">Set Time</button>
+  </div>
+
+  <div id="confetti-container"></div>
+
+  <audio id="hourly-chime" src="hourly-chime.mp3" preload="auto"></audio>
+
+  
+
+  <script src="script.js"></script>
+</body>
