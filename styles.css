@@ -45,6 +45,10 @@ body {
   z-index: 200;
 }
 
+.ph-timer {
+  cursor: pointer;
+}
+
 .subtitle {
   color: white;
   font-size: 24px;
