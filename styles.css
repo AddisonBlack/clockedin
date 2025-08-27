@@ -60,7 +60,7 @@ body {
 .themes-dropdown {
   position: absolute;
   top: 30px;
-  right: 100px;
+  right: 5%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -185,7 +185,7 @@ body {
   justify-content: center;
   height: 150px;
   width: 100%;
-  top: 250px;
+  top: 26%;
 }
 
 .time {
@@ -195,9 +195,9 @@ body {
 
 .button-container {
   display: flex;
-  position: relative;
+  position: absolute;
   width: 100%;
-  top: 425px;
+  top: 60%;
   justify-content: center;
   gap: 100px;
 }
@@ -294,7 +294,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  top: 700px;
+  top: 75%;
   gap: 50px;
 }
 
@@ -302,7 +302,7 @@ body {
   height: 35px;
   width: 95px;
   border-radius: 15px;
-  font-size: 17px;
+  font-size: 16px;
   cursor: pointer;
   border: none;
 }
@@ -319,7 +319,7 @@ input {
 
 .progress-bar-container {
   position: absolute;
-  bottom: 100px;
+  top: 85%;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
@@ -368,5 +368,35 @@ input {
 
     transform: translate(calc(var(--x-offset) * 1vw), calc(var(--y-offset) * 1vh + 20vh)) rotate(calc(720deg * var(--rotate-direction)));
     opacity: 0;
+  }
+}
+
+@media (max-width: 1500px) {
+  .time {
+    font-size: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  .time {
+    font-size: 100px;
+  }
+
+  .themes-button {
+    font-size: 20px;
+  }
+
+  .header,
+  .ph {
+    font-size: 35px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    margin-left: 25px;
+  }
+
+  .button-container {
+    gap: 30px;
   }
 }

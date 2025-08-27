@@ -112,13 +112,21 @@ document.querySelector(".set-time-button").addEventListener("click", () => {
 document.querySelector(".ph").addEventListener("click", setCustomTime);
 
 function setCustomTime() {
-  document.querySelector(".custom-time-input").style.display = "flex";
+  const customInput = document.querySelector(".custom-time-input");
+  if (customInput.style.display === "flex") {
+    customInput.style.display = "none";
+  } else {
+    customInput.style.display = "flex";
+  }
 }
 
 document.querySelector(".set-time-button").addEventListener("click", removeCustomTime);
 
 function removeCustomTime() {
   document.querySelector(".custom-time-input").style.display = "none";
+  document.getElementById("hours").value = "";
+  document.getElementById("minutes").value = "";
+  document.getElementById("seconds").value = "";
 }
 
 // Themes Dropdown
